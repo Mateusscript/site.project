@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+body {
+    background-color: rgb(255, 255, 255); /* Define o fundo do site como preto */
+    color: rgb(0, 0, 0); /* Define a cor do texto como branco */
+
+        /*FUNDO DO SITE*/
+        background-image: url(''); /* Substitua 'caminho_para_sua_imagem.jpg' pelo caminho da sua imagem de fundo */
+        background-color: rgb(255, 247, 247); /* Define o fundo do site como preto */
+        background-size: cover; /* Ajusta a imagem de fundo para cobrir toda a tela */
+        background-attachment: fixed; /* Fixa a imagem de fundo para criar o efeito de paralaxe */
+        color: rgb(5, 5, 5); /* Define a cor do texto como branco */
+        
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    background-color: #000000;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav li a:hover{
+    background-color: white;
+    color: black;
+}
+.banner{
+    height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.texto .titulo{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+.texto .sub_titulo{
+    color: #fff;
+    font-size: 58px;
+    font-weight: 600;
+}
+.texto .botoes{
+    margin-top: 30px;
+}
+.texto .botoes button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+.texto .botoes button.n-overlay{
+    color: white;
+    background: none;
+    border: 2px solid white;
+}
+.texto .botoes button.n-overlay:hover{
+    color: black;
+    background-color: white;
+}
+.texto .botoes button.overlay{
+    background: white;
+    color: black;
+    animation: vibrar 0.8s ease-in-out infinite both;
+}
+@keyframes vibrar {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*CARROSEL DAS BLUSAS*/
+
+.gallery-frame {
+    width: 800px; /* Largura da galeria */
+    height: 500px; /* Altura da galeria */
+    position: fixed; /* Fixa a galeria no canto da tela */
+    bottom: 150px; /* Distância do fundo da tela */
+    left: 100px; /* Distância da esquerda da tela */
+    overflow: hidden;
+}
+
+.gallery-container {
+    width: 600px; /* Largura da galeria */
+    height: 500px; /* Altura da galeria */
+    position: relative; /* Posição relativa para a galeria */
+    overflow: hidden; /* Oculta conteúdo além da área especificada */
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
+}
+
+.side-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.side-images img {
+    width: 50px;
+    height: auto;
+    margin: 5px;
+    cursor: pointer;
+}
+
