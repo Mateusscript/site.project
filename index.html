@@ -5,52 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Galeria de Fotos</title>
 </head>
 <body>
-    <div class="gallery-frame">
-        <div class="gallery-container">
-            <a href="http://127.0.0.1:5500/front.html" target="_blank"><div class="gallery-image active" style="background-image: url('https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-slipknot-05-ykxu7pw6k4.png');"></div></a>
-            <a href="http://127.0.0.1:5500/front.html" target="_blank"><div class="gallery-image" style="background-image: url('https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-suicidal-god-c6d9de0111-600x600.jpg');"></div></a>
-            <a href="http://127.0.0.1:5500/front.html" target="_blank"><div class="gallery-image" style="background-image: url('https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-cliff-rickembaker-png-00-b06iz85lx2.png');"></div></a>
-            <a href="http://127.0.0.1:5500/front.html" target="_blank"><div class="gallery-image" style="background-image: url('https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-avenged-sevenfold-05-uovwpuqc03.png');"></div></a>
-            <a href="http://127.0.0.1:5500/front.html" target="_blank"><div class="gallery-image" style="background-image: url('https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-evanescence-1-uajrup.jpg');"></div></a>
-            <a href="http://127.0.0.1:5500/front.html" target="_blank"><div class="gallery-image" style="background-image: url('https://anesthesiawear.com.br/wp-content/uploads/2024/04/in-utero-xizmbo.jpg ');"></div></a>
-            <a href="http://127.0.0.1:5500/front.html" target="_blank"><div class="gallery-image" style="background-image: url('https://anesthesiawear.com.br/wp-content/uploads/2024/04/bloody-kisses-gbbajt-600x600.jpg');"></div></a>
-            <a href="http://127.0.0.1:5500/front.html" target="_blank"><div class="gallery-image" style="background-image: url('https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-black-metal-ll.jpg');"></div></a>
-            <a href="http://127.0.0.1:5500/front.html" target="_blank"><div class="gallery-image" style="background-image: url('https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-shadows-follow-01-1.png');"></div></a>
-            <a href="http://127.0.0.1:5500/front.html" target="_blank"><div class="gallery-image" style="background-image: url('https://anesthesiawear.com.br/wp-content/uploads/2024/04/red-hot-02-tfsbox.jpg');"></div></a>
-            <a href="http://127.0.0.1:5500/front.html" target="_blank"><div class="gallery-image" style="background-image: url('https://anesthesiawear.com.br/wp-content/uploads/2024/04/005-vlvewh-600x600.jpg');"></div></a>
-            <a href="http://127.0.0.1:5500/front.html" target="_blank"><div class="gallery-image" style="background-image: url('https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-acdc-0-jkilrf07to-450x450.png');"></div></a>
-            <a href="http://127.0.0.1:5500/front.html" target="_blank"><div class="gallery-image" style="background-image: url('https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-death-angel-0kl9cdww4v-450x450.png');"></div></a>
-        </div>
-    </div>
-    
-    <script src="script.js"></script>
-    
-    </body>
-    </html>
+
     <nav>
-
         <div class="logo">
-            <a href="index.html">Space Rock</a>
+            <a href="index.html">Mostruario</a>
+
+        <div class="cart-container">
+            <img src="https://i.pinimg.com/originals/85/07/5e/85075e1992bd0141af194e72ecc973de.gif" alt="Carrinho" class="cart-icon">
+            <div class="cart-count"></div>
+            <div class="cart-dropdown">
+                <h2>Itens no Carrinho</h2>
+                <ul class="cart-items"></ul>
+                <button class="checkout-button" onclick="mostrarMensagem()">Finalizar Compra</button>
+            </div>
         </div>
-
-        <ul>
-            <li> <a href="http://127.0.0.1:5500/index.html#"> Home </a> </li>
-            <li> <a href="https://whiplash.net/materias/news_710/349421.html"> Sobre </a> </li>
-            <li> <a href=""> Preços </a> </li>
-            <li> <a href="#"> Serviços </a> </li>
-            <li> <a href="#"> Contacto </a> </li>
-        </ul>
-
     </nav>
     <section class="banner">
         <div class="texto">
-           <div class="botoes">
-               <button class="n-overlay">Saiba Mais</button>
-               <button href="https://anesthesiawear.com.br/" class="overlay">COMPRAR</button>
-           </div>
+            <div class="botoes"></div>
         </div>
+        
     </section>
+    
+    </div>
+    <main class="image-links">
+        <a href="https://anesthesiawear.com.br/produto/camiseta-ghost-infestissuman/">
+            <img src="https://cdn.awsli.com.br/600x450/2250/2250933/produto/182919702/camiseta-ghost---infestissuman---merch-oipelpfeh8.png" alt="CAMISETA GHOST-INFESTISSUMAN">
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </a>
+            <a href="https://anesthesiawear.com.br/produto/camiseta-black-sabbath-never-say-die/">
+                <img src="https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-black-sabbath-never-say-die-c-pia-1prnwi4qjx-600x600.png" alt="CAMISETA BLACK SABBATH-NEVER SAY DIE">
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+
+            <a href="https://anesthesiawear.com.br/produto/camiseta-metallica-death-magnetic/">
+                <img src="https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-death-magnetic-preta-yunmzt-600x600.jpg" alt="CAMISETA METALLICA – DEATH MAGNETIC">
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+
+            <a href="https://anesthesiawear.com.br/produto/camiseta-anthrax-for-all-kings/">
+                    <img src="https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-anthrax-for-all-kings-qv5uxfd3gs-600x600.png" alt="CAMISETA ANTHRAX – FOR ALL KINGS">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+    
+            <a href="https://anesthesiawear.com.br/produto/camiseta-the-shortest-straw/">
+                <img src="https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-the-shortest-straw.png" alt="CAMISETA THE SHORTEST STRAW">
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        
+            <a href="https://anesthesiawear.com.br/produto/camiseta-within-temptation-stand-my-ground/">
+                <img src="https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-within-temptation-stand-my-groud-mgwlzvpqy6-600x600.png" alt="CAMISETA WITHIN TEMPTATION – STAND MY GROUND">
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+
+            <a href="https://anesthesiawear.com.br/produto/camiseta-red-hot-chili-peppers-by-the-way/">
+                <img src="https://anesthesiawear.com.br/wp-content/uploads/2024/04/red-hot-02-tfsbox.jpg" alt="CAMISETA RED HOT CHILI PEPPERS – BY THE WAY">
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+
+            <a href="https://anesthesiawear.com.br/produto/camiseta-seek-and-destroy/">
+                <img src="https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-seek-and-destroy-02.png" alt="CAMISETA SEEK AND DESTROY">
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+
+            <a href="https://anesthesiawear.com.br/produto/camiseta-shadows-follow/">
+                <img src="https://anesthesiawear.com.br/wp-content/uploads/2024/04/camiseta-shadows-follow-01-1.png" alt="CAMISETA SHADOWS FOLLOW">
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+
+            <a href="https://anesthesiawear.com.br/produto/camiseta-type-o-negative-october-rust/">
+                <img src="https://anesthesiawear.com.br/wp-content/uploads/2024/04/october-rust-tyvfnv.jpg" alt="CAMISETA TYPE O NEGATIVE – OCTOBER RUST">
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+
+                <a href="https://anesthesiawear.com.br/produto/camiseta-ghost-opus-eponymous/">
+                <img src="https://anesthesiawear.com.br/wp-content/uploads/2024/04/4c280ecbb4-600x600.jpg" alt="CAMISETA GHOST – OPUS EPONYMOUS">
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+
+            <a href="https://anesthesiawear.com.br/produto/camiseta-ghost-prequelle/">
+                <img src="https://anesthesiawear.com.br/wp-content/uploads/2024/04/d110680c32-600x600.jpg" alt="CAMISETA GHOST – PREQUELLE">
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+
+               
+
+     </main>
+    <script src="script.js"></script>
 </body>
 </html>
